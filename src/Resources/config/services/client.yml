@@ -1,0 +1,3 @@
+services:
+    test8bit:
+        class: Gemorroj\Test8bitBundle\Client\GuzzleClient
