@@ -18,7 +18,7 @@ Test8bitBundle
 
 - Add to AppKernel.php:
 ```php
-    new Gemorroj\Test8bitBundle\GemorrojTest8bitBundle(),
+    new Gemorroj\Test8bitBundle\Test8bitBundle(),
 ```
 
 ### Requirements:
