@@ -83,13 +83,7 @@ class GuzzleClientTest extends \PHPUnit_Framework_TestCase
      */
     private function getErrorMessage()
     {
-        return '{
-   "data": {
-       "message": "test error message",
-       "code": "test error code"
-   },
-   "success": false
-}';
+        return file_get_contents(__DIR__ . '/fixtures/error.json');
     }
 
     /**
@@ -97,26 +91,6 @@ class GuzzleClientTest extends \PHPUnit_Framework_TestCase
      */
     private function getSuccessMessage()
     {
-        return '{
-   "data": {
-       "locations": [
-           {
-               "name": "Eiffel Tower",
-               "coordinates": {
-                   "lat": 21.12,
-                   "long": 19.56
-               }
-           },
-           {
-               "name": "test",
-               "coordinates": {
-                   "lat": 12.34,
-                   "long": 56.78
-               }
-           }
-       ]
-   },
-   "success": true
-}';
+        return file_get_contents(__DIR__ . '/fixtures/success.json');
     }
 }

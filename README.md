@@ -16,6 +16,11 @@ Test8bitBundle
 }
 ```
 
+- Add to AppKernel.php:
+```php
+    new Gemorroj\Test8bitBundle\GemorrojTest8bitBundle(),
+```
+
 ### Requirements:
 
 - PHP >= 5.5.9

@@ -1,0 +1,7 @@
+{
+  "data": {
+    "message": "test error message",
+    "code": "test error code"
+  },
+  "success": false
+}
