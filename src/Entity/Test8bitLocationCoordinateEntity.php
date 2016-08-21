@@ -9,7 +9,13 @@ class Test8bitLocationCoordinateEntity
     const SCALE_LAT = 2;
     const SCALE_LONG = 2;
 
+    /**
+     * @var Decimal
+     */
     private $lat;
+    /**
+     * @var Decimal
+     */
     private $long;
 
     /**

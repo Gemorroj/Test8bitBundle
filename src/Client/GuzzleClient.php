@@ -11,9 +11,18 @@ use Psr\Http\Message\ResponseInterface;
 
 class GuzzleClient
 {
+    /**
+     * @var Client
+     */
     private $client;
+    /**
+     * @var GuzzleValidator
+     */
     private $validator;
 
+    /**
+     * GuzzleClient constructor.
+     */
     public function __construct()
     {
         $this->client = new Client();
@@ -21,8 +30,8 @@ class GuzzleClient
     }
 
     /**
-     * @param string $uri
-     * @param array $options
+     * @param string $uri Path to json
+     * @param array $options Guzzle options
      * @return Test8bitEntity
      */
     public function getData($uri, array $options = [])

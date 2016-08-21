@@ -4,6 +4,9 @@ namespace Gemorroj\Test8bitBundle\Exception;
 
 class Test8bitException extends \Exception
 {
+    /**
+     * @var string
+     */
     private $errorCode;
 
     /**

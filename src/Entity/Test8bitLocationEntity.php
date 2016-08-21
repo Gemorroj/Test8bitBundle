@@ -4,7 +4,13 @@ namespace Gemorroj\Test8bitBundle\Entity;
 
 class Test8bitLocationEntity
 {
+    /**
+     * @var string
+     */
     private $name;
+    /**
+     * @var Test8bitLocationCoordinateEntity
+     */
     private $coordinates;
 
     /**
